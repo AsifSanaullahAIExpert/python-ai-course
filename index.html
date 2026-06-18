@@ -3117,7 +3117,7 @@ function closeSB() {
 // ── ANALYTICS (SPA per-lesson pageviews; safe no-op until configured) ─
 function trackLesson(id) {
   try {
-    if (window.GC_CODE === 'MYCODE') return;            // not configured yet → do nothing
+    if (window.GC_CODE === 'asif-python') return;            // not configured yet → do nothing
     if (window.goatcounter && typeof window.goatcounter.count === 'function') {
       var p = PAGES.find(function(x){ return x.id === id; });
       window.goatcounter.count({
